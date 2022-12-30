@@ -1,0 +1,102 @@
+/*MAIN*/
+.main-todos-los-productos{
+    width: 100%;
+    min-height: 500px;
+    background-color: #e9f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-t-p-1{
+    width: 77%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-tp-cont-productos{
+    width: 80%;
+   
+    min-height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-tp-productos{
+    width: 150px;
+    height: 250px;
+    margin: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px rgb(58, 58, 58);
+    position: relative;
+}
+/*Style boton*/
+.btn-agregar-productos{
+    width: 200px;
+    height: 50px;
+    margin: 5px 0;
+    background-color: #2A7AE4;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    color: white;
+    box-shadow: 3px 3px 5px rgb(153, 174, 214);
+    transition: .3s all ease;
+}
+.btn-agregar-productos:hover{
+    background-color: #4088e6;
+}
+/*STYLE PRODUCTOS*/
+
+
+.incons{
+    width: 20px;
+    position: absolute;
+    top: 3%;
+    cursor: pointer;
+    transition: .3s all ease;
+    border-radius:3px;
+}
+.incons:hover{
+    background-color: rgba(219, 219, 219, 0.644);
+   
+}
+.trash{
+    
+    left: 60%;
+}
+.pencil{
+    left: 80%
+}
+img{
+    width: 100%;
+}
+p{
+    margin-left: 5px;
+    font-size: 17px;
+
+}
+.precio{
+    font-weight: 600;
+}
+.main-tp-productos-info{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#close-mail-box{
+    margin: 10px 5px 0 0;
+    background-color: rgba(208, 208, 208, 0.589);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+  }
+  .lupa{
+    width: 20%;
+  }

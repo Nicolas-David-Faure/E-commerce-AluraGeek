@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="normalize.css" >
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="mostrarProducto.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+ <body>
+    <!--Header-->
+    <header class="hero">
+        <div class="container-title-search">
+        <!--Titulo-->
+        <div class="container-title"><img  src="/img/joystick.svg"/>
+            <h1 class="title">
+                <span class="alura">Alura</span><span class="geek">Geek</span>    
+            </h1>
+        </div>
+        <!--Buscador-->
+        <div class="container-buscador"> 
+            <input class="buscador" type="text" placeholder="¿Qué deseas buscar?"><img class="lupa" src="/svg/lupa.svg" alt="Buscar">
+        </div>
+    </div>
+       <!--Boton Login-->
+       <a class="botton-login-a" href="/login.html"><button class="botton-login">Login</button></a>
+    </header>
+    <!--Banner-->
+    <div class="banner">
+        <div class="banner-desc">
+            <h2 class="banner-h2">Febrero Promocional</h2>
+            <p class="banner-p">Productos seleccionados con <span class="banner-span-p">33%</span> de <span class="banner-span-p">descuento</span></p>
+            <a href="https://www.youtube.com/watch?v=Sagg08DrO5U" target="_blank"><button class="banner-btn">Ver Consolas</button></a>
+        </div>
+    </div>
+    <!--Section Main-->
+    <main class="container-main">
+        <span id="mostrar-productos" class="mostrar-productos">
+            <div id="mostrar-p-A" class="mostrar-p-A"></div>
+           
+            <div id="mostrar-p-recomendados" class="mostrar-p-recomendado"> </div>
+        </span>
+        <!--CATEGORIAS SW-->
+        <div class="main-categorias">
+                <div class="cat-conteiner">
+                    <h3 class="subtitulos-h3">Star Wars</h3>
+                    <div class="cat-conteiner-ver-todo">
+                        <a href="/todosLosProductos.html">Ver todo</a>
+                        <img src="/svg/arrow-right.svg" alt="arrow-right">
+                    </div>
+                    
+                </div>
+                
+                                            <!--Productos STAR WARS-->
+                <div  class="container-productos-principal">
+                    <div class="container-productos">
+                        <div class="container-img" id="sw-1"></div>   
+                        <div class="description-procuctos" id="sw-1-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                        <div class="container-img"  id="sw-2"></div>   
+                        <div class="description-procuctos" id="sw-2-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                        <div  class="container-img" id="sw-3"></div>   
+                        <div class="description-procuctos" id="sw-3-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                        <div class="container-img"  id="sw-4"></div>   
+                        <div class="description-procuctos" id="sw-4-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                        <div  class="container-img" id="sw-5"></div>   
+                        <div class="description-procuctos" id="sw-5-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                        <div class="container-img" id="sw-6"></div>   
+                        <div class="description-procuctos" id="sw-6-p"> </div>   
+                    </div>
+                </div>    
+        </div>
+        <!--CATEGORIAS CONSOLA-->
+        <div class="main-categorias">
+                <div class="cat-conteiner">
+                    <h3 class="subtitulos-h3">Consolas</h3>
+                    <div class="cat-conteiner-ver-todo">
+                        <a href="/todosLosProductos.html">Ver todo</a>
+                        <img src="/svg/arrow-right.svg" alt="arrow-right">
+                    </div>
+                </div>
+                <div class="container-productos-principal">
+                    <div class="container-productos" >
+                         <div class="container-img" id="con-0"></div>   
+                        <div class="description-procuctos" id="con-0-p"> </div>   
+                    </div>
+                    <div class="container-productos" >
+                         <div class="container-img" id="con-1"></div>   
+                        <div class="description-procuctos" id="con-1-p"> </div>   
+                    </div>
+                    <div class="container-productos" >
+                         <div class="container-img" id="con-2"></div>   
+                        <div class="description-procuctos" id="con-2-p"> </div>   
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="con-3"></div>   
+                        <div class="description-procuctos" id="con-3-p"> </div>   
+                    </div>
+                    <div class="container-productos" >
+                         <div class="container-img" id="con-4"></div>   
+                         <div class="description-procuctos" id="con-4-p"></div>   
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="con-5"></div>   
+                        <div class="description-procuctos" id="con-5-p"> </div>   
+                    </div>
+                </div>
+        </div>
+        <!--CATEGORIAS Diverso-->
+        <div class="main-categorias">
+                <div class="cat-conteiner">
+                    <h3 class="subtitulos-h3">Diversos</h3>
+                    <div class="cat-conteiner-ver-todo">
+                        <a href="/todosLosProductos.html">Ver todo</a>
+                        <img src="/svg/arrow-right.svg" alt="arrow-right">
+                    </div>
+                </div>
+                <div class="container-productos-principal">
+                    <div class="container-productos">
+                        <div class="container-img" id="div-0"></div>   
+                        <div class="description-procuctos" id="div-0-p"> </div>                             
+                    </div>
+                    <div class="container-productos">
+                        <div class="container-img" id="div-1"></div>   
+                        <div class="description-procuctos" id="div-1-p"> </div>                         
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="div-2"></div>   
+                         <div class="description-procuctos" id="div-2-p"> </div> 
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="div-3"></div>   
+                         <div class="description-procuctos" id="div-3-p"> </div> 
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="div-4"></div>   
+                         <div class="description-procuctos" id="div-4-p"> </div> 
+                    </div>
+                    <div class="container-productos">
+                         <div class="container-img" id="div-5"></div>   
+                         <div class="description-procuctos" id="div-5-p"> </div> 
+                    </div>
+                </div>
+        </div>
+
+    </main>
+    <footer >
+        <div class="footer-cont-a">
+            <div class="footer-cont-a-son">
+            <div class="footer-cont-a-logo">
+                <div class="footer-cont-a-logo-box">
+                    <img src="/img/joystick.svg" alt="js-icon"><h2><span class="alura">Alura</span>Geek</h2>
+                </div>
+            </div>
+            <nav >
+                <ul>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Programa de fidelidad</a></li>
+                    <li><a href="#">Nuestras Tiendas</a></li>
+                    <li><a href="#">Quiero ser franquiciado</a></li>
+                    <li><a href="#">Anúncie aquí</a></li>
+                </ul>
+            </nav>
+            <form class="form-footer" action="#">
+                <h3>Hable con nosotros</h3>
+                <div class="form-footer-nombre">
+                    <p>Nombre</p>
+                    <input type="text" >
+                </div>
+                <textarea name="" placeholder="Escriba su mensaje" id="" cols="42" rows="5"></textarea>
+                <button class="form-footer-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+        <div class="footer-cont-b">
+            <div class="footer-cont-b-son">
+                <p>Desarrollado por <span>Nicolás Faure</span></p>
+                <p>2022</p>
+                <div class="footer-cont-b-son-incon">
+                    <a target="_blank" href="https://github.com/Nicolas-David-Faure"><span class="cont-incon-social"><img class="logo-git" src="/svg/logo-git.svg"></span></a>
+                    <span class="cont-incon-social" id="logo-mail-toggle"><img class="logo-mail" src="/svg/logo-mail.svg"></span>
+                    <a target=”_blank” href="https://www.linkedin.com/in/nicol%C3%A1s-david-faure-b023ba240/"><span class="cont-incon-social"><img class="logo-linkedin" src="/svg/logo-linkedin.svg"></span></a>
+                </div>
+            </div>
+          
+        </div>
+<span id="span-mail" class="span-mail">
+    <div class="span-cont-mail-close"><img id="close-mail-box" src="/svg/X.svg"></div>
+    <div class="span-cont-mail">
+        <p>nicolas.david.faure@gmail.com</p>
+    </div>    
+</span>
+    </footer>
+    <script src="/script.js"></script>
+ </body>
+</html>

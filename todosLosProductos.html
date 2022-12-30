@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek - Todos los Productos</title>
+    <link rel="stylesheet" href="normalize.css" >
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="todosLosProductos.css"
+</head>
+ <body>
+    <!--Header-->
+    <header class="hero">
+        <div class="container-title-search">
+        <!--Titulo-->
+        <div class="container-title"><img  src="/img/joystick.svg"/>
+        <a href="/index.html">
+            <h1 class="title">
+                <span class="alura">Alura</span><span class="geek">Geek</span>    
+            </h1>
+        </a>
+        </div>
+        <!--Buscador-->
+        <div class="container-buscador"> 
+            <input class="buscador" type="text" placeholder="¿Qué deseas buscar?"><img class="lupa" src="/svg/lupa.svg" alt="Buscar">
+        </div>
+    </div>
+      
+    </header>
+                <!--TODOS LOS PRODUCTOS-->
+        <main class="main-todos-los-productos">
+            <div class="main-t-p-1">
+                <h2>Todos los productos</h2>
+                <a href="/agregarProducto.html"><button class="btn-agregar-productos">Agregar Productos</button></a>
+            </div>
+            <div class="main-tp-cont-productos" id="main-TP">
+
+            </div>
+        </main>
+    <footer >
+        <div class="footer-cont-a">
+            <div class="footer-cont-a-son">
+            <div class="footer-cont-a-logo">
+                <div class="footer-cont-a-logo-box">
+                    <img src="/img/joystick.svg" alt="js-icon"><h2><span class="alura">Alura</span>Geek</h2>
+                </div>
+            </div>
+            <nav >
+                <ul>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Programa de fidelidad</a></li>
+                    <li><a href="#">Nuestras Tiendas</a></li>
+                    <li><a href="#">Quiero ser franquiciado</a></li>
+                    <li><a href="#">Anúncie aquí</a></li>
+                </ul>
+            </nav>
+            <form class="form-footer" action="#">
+                <h3>Hable con nosotros</h3>
+                <div class="form-footer-nombre">
+                    <p>Nombre</p>
+                    <input type="text" >
+                </div>
+                <textarea name="" placeholder="Escriba su mensaje" id="" cols="42" rows="5"></textarea>
+                <button class="form-footer-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+        <div class="footer-cont-b">
+            <div class="footer-cont-b-son">
+                <p>Desarrollado por <span>Nicolás Faure</span></p>
+                <p>2022</p>
+                <div class="footer-cont-b-son-incon">
+                    <a target="_blank" href="https://github.com/Nicolas-David-Faure"><span class="cont-incon-social"><img class="logo-git" src="/svg/logo-git.svg"></span></a>
+                    <span class="cont-incon-social" id="logo-mail-toggle"><img class="logo-mail" src="/svg/logo-mail.svg"></span>
+                    <a target=”_blank” href="https://www.linkedin.com/in/nicol%C3%A1s-david-faure-b023ba240/"><span class="cont-incon-social"><img class="logo-linkedin" src="/svg/logo-linkedin.svg"></span></a>
+                </div>
+            </div>
+          
+        </div>
+<span id="span-mail" class="span-mail">
+    <div class="span-cont-mail-close"><img id="close-mail-box" src="/svg/X.svg"></div>
+    <div class="span-cont-mail">
+        <p>nicolas.david.faure@gmail.com</p>
+    </div>    
+</span>
+    </footer>
+    
+    <script src="/todosLosProductos.js"></script>
+ </body>
+</html>

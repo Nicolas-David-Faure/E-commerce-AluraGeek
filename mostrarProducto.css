@@ -1,0 +1,224 @@
+.mostrar-productos{
+    border-radius: 20px;
+    transition: .3s ease all;
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    box-shadow: 3px 3px 5px black;
+    position: fixed;
+    top: 10px;
+    visibility: hidden; 
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}   
+.activar-mostrarProductos{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*Contenedor de la imagen*/
+.mostrar-p-A{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 0px 0;
+    background-color: rgb(230, 230, 230);
+}
+.cerrar-mostrar-mas{
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    background-color: rgba(167, 156, 244, 0.671);
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.cerrar-mostrar-mas:hover{
+    background-color: rgba(225, 78, 78, 0.671);
+}
+.mostrar-p-A-img{
+    width: 40%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar-p-A-img img{
+    width: 90%;
+    height: 80%;
+    box-shadow: 3px 3px 5px #ee7171;
+}
+/*Contenedor descripcion*/
+
+.mostrar-p-A-desc{
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mostrar-p-A-desc h2{
+    text-align: center;
+}
+.p-description{
+    font-size: 20px;
+    
+}
+
+
+.mostrar-p-recomendado{
+    display: flex;
+
+    width: 100%;
+    height: 30%;
+    background-color: rgb(105, 74, 74);
+    border-radius: 0px 0px 20px 20px;
+}
+
+/*Contenedor caja recomendado*/
+.contenedor-recomendados{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    border-left:1px solid black ;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.contenedor-recomendados:first-child{
+    border: none;
+    border-radius: 0px 0px 0px 20px;
+}
+.contenedor-recomendados:last-child{
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+.imagen-recomendado{
+    margin: auto;
+    width: 160px;
+    height: 65%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    
+}
+.imagen-recomendado:hover, .contenedor-recomendados:hover{
+    background-color: rgb(184, 185, 240);
+
+    
+}
+.h2-recomendado{
+    font-size: 17px;
+    margin: 0;
+    
+    text-align: center;
+}
+.precio-recomendado{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 1000px) {
+    .p-description{
+        font-size: 15px;
+    }
+    .cerrar-mostrar-mas{
+        width: 30px;
+    }
+    .contenedor-recomendados{
+        width: 20%;
+          
+    }
+    .imagen-recomendado{
+       
+        width: 60%;
+        height: 60%;
+        
+    }
+    .h2-recomendado{
+        font-size: 15px;
+       
+    }
+    .precio-recomendado{
+       
+        font-size: 15px;
+        
+    }
+    
+  }
+  @media (max-width: 600px) {
+
+    .mostrar-p-A{
+        width: 100%;
+        height: 50%; 
+        
+    }
+    .p-description{
+        font-size: 13px;
+    }
+    
+    .mostrar-p-recomendado{
+    display: flex;
+
+    
+    height: 60%;
+    
+}
+    .imagen-recomendado{
+    width: 95%;
+}
+.contenedor-recomendados{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    border-left:1px solid black ;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.recomendados-info{
+    height: 30%;
+}
+.cerrar-mostrar-mas{
+    width: 25px;
+}
+
+  }
+  @media (max-width: 412px) {
+    h2{
+        font-size: 20px;
+    }
+    .p-description{
+        font-size: 10px;
+    }
+    .mostrar-p-recomendado{
+        display: flex;
+    
+        
+        height: 50%;
+        
+    }
+    .h2-recomendado{
+        font-size: 12px;
+    }
+    .cerrar-mostrar-mas{
+        width: 20px;
+        left: 94%;
+    }
+  }
