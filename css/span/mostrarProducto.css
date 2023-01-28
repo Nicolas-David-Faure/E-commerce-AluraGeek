@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 20px 20px 0px 0;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
 }
 .cerrar-mostrar-mas{
     position: absolute;
@@ -54,7 +54,7 @@
 .mostrar-p-A-img img{
     width: 90%;
     height: 80%;
-    box-shadow: 3px 3px 5px #ee7171;
+    box-shadow: 3px 3px 5px #c4c4c4;
 }
 /*Contenedor descripcion*/
 
@@ -81,7 +81,7 @@
 
     width: 100%;
     height: 30%;
-    background-color: rgb(105, 74, 74);
+    background-color: rgb(0, 227, 219);
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -161,46 +161,139 @@
     }
     
   }
-  @media (max-width: 600px) {
-
-    .mostrar-p-A{
-        width: 100%;
-        height: 50%; 
+ 
+@media screen and (min-width: 360px) {
+    .mostrar-productos{
+        border-radius: 0px;
+        width: 98%;
+        margin: 0;
         
     }
-    .p-description{
-        font-size: 13px;
-    }
-    
-    .mostrar-p-recomendado{
-    display: flex;
-
-    
-    height: 60%;
-    
-}
+     
     .imagen-recomendado{
-    width: 95%;
-}
-.contenedor-recomendados{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+    .mostrar-p-recomendado{
+        display: flex;
     
-    border-left:1px solid black ;
-    cursor: pointer;
-    transition: .3s ease all;
-}
-.recomendados-info{
-    height: 30%;
-}
-.cerrar-mostrar-mas{
-    width: 25px;
+        
+        height: 60%;
+        
+    }
+    .mostrar-p-A-desc h2{
+        font-size: 1.3rem;
+    }
+    .mostrar-p-recomendado{
+        display: flex;
+    }
+    .contenedor-recomendados{
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .3 ease;
+    }
+    .contenedor-recomendados:hover{
+        cursor: crosshair;
+        width: 100px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .mostrar-p-A{
+        border-radius: 0;
+    }
+    .mostrar-p-recomendado{
+        border-radius: 0;
+    }
+    .h2-recomendado{
+        font-size: .7rem;
+        text-align: start;
+    }
+    .precio-recomendado{
+        font-size: .5rem;
+        text-align: start;
+    }
+    .contenedor-recomendados:hover .h2-recomendado{
+        font-size:1rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .contenedor-recomendados:hover .precio-recomendado{
+        font-size:1rem;
+        text-align: center;
+    }
+    .p-description{
+        font-size: .8rem;
+    }
+    .cerrar-mostrar-mas{
+        top: 0px;
+        left: 93%;
+    }
 }
 
+@media screen and (min-width: 576px) {
+
+    .cerrar-mostrar-mas{
+        left: 95%;
+    }
+    .p-description{
+        font-size: 1.2rem;
+    }
+    .contenedor-recomendados:hover .h2-recomendado{
+        font-size:1.3rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .contenedor-recomendados:hover .precio-recomendado{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    .h2-recomendado{
+        font-size: 1rem;
+        text-align: start;
+        transition: ease all .5s;
+    }
+    .precio-recomendado{
+        font-size: .8rem;
+        text-align: start;
+        transition: ease all .5s;
+    }
+    .p-precio{
+        font-size: 1.3rem;
+    }
   }
-  @media (max-width: 412px) {
+  @media screen and (min-width: 768px){
+    
+  }
+  @media screen and (min-width: 1268px){
+    .mostrar-productos{
+        height: 70vh;
+        width: 90vw;
+    }
+    .mostrar-p-recomendado{
+        border-radius: 0px 0px 20px 20px;
+    }
+    .mostrar-p-A{
+        border-radius: 20px 20px 0px 0;
+    }
+    .contenedor-recomendados{
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .3 ease;
+    }
+    .contenedor-recomendados:hover{
+        cursor: pointer;
+        width: 0;
+        flex-grow:1;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+  }
+
+ /* @media (max-width: 412px) {
     h2{
         font-size: 20px;
     }
@@ -221,4 +314,4 @@
         width: 20px;
         left: 94%;
     }
-  }
+  }*/
